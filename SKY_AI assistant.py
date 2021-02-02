@@ -61,7 +61,7 @@ def usrname():
 
 def SendMail(to,content):
     s = smtplib.SMTP('smtp.gmail.com', 587)
-    sender_email = "abhaywwe6@gmail.com"
+    sender_email = "your email id"
     password = input("enter your password: ")
     s.ehlo()
     s.starttls()
@@ -143,7 +143,7 @@ if __name__ == '__main__':
             try:
                 speak("What should i say!")
                 content= take_command()
-                to="abhaywwe6@gmail.com"
+                to="Receiver email id"
                 SendMail(to,content)
                 speak("Email successfully sent!")
             except Exception as e:
